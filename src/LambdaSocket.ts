@@ -22,7 +22,9 @@ interface Connection {
 interface LambdaSocketOptions {
   ttl?: number
   models?: {
-    Connection: ConnectionModel
+    Connection: any
+  } | {
+    [key: string]: any
   }
   failOnDelete?: boolean
   handleProtocols?: (protocols: Set<string>) => string

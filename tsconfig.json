@@ -12,8 +12,9 @@
     "types": ["mocha", "chai", "sinon", "node"],
     "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "declaration": true
   },
-  "include": ["src/**/*", "tests/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "tests"]
 }

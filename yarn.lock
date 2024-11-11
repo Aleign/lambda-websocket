@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aleign/dynamodb-models@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@aleign/dynamodb-models/-/dynamodb-models-1.0.2.tgz#5d6af59615d8fce10794fba65e80153c60a525e1"
-  integrity sha512-9g94RS9Ngtv1O2k4YPj8NbZnhBJzyyKjOhROpB3wRHwBb2/J+G8kPRSty0gM6964FvWqQZDFlh2iVKAZ0P9CFg==
+"@aleign/dynamodb-models@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@aleign/dynamodb-models/-/dynamodb-models-1.0.3.tgz#5eda274ab0fcd2a63cbd97e050cb445d71c57ec6"
+  integrity sha512-qkqY/l9qR9iE0PimtLVfDqxDqS+LjsXmJrW4+7cccVn8viPD5hGgGoHKowXvblPa8uZQRhx4YwXPa4IqgRAmCQ==
   dependencies:
     dynamoose "^3.0.0"
 
