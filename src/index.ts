@@ -1,2 +1,2 @@
 export * from './LambdaSocket'
-export * from './handlers'
+export * from './handlers/webSocketHandler'
