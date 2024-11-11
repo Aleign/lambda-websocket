@@ -127,3 +127,21 @@ const socket = new LambdaSocket({
 ```
 
 This allows integration with any database or storage system by implementing the ConnectionModel interface.
+
+## Protocol Handling
+
+The LambdaSocket supports WebSocket protocol negotiation through the `handleProtocols` option. This is particularly useful when integrating with specific WebSocket protocols like graphql-ws.
+
+```typescript
+import { handleProtocols } from 'graphql-ws'
+
+const socket = new LambdaSocket({
+  handleProtocols: (protocols: Set<string>) => {
+    // handleProtocols from graphql-ws validates and selects
+    // the appropriate protocol for GraphQL over WebSocket
+    return handleProtocols(protocols)
+  }
+})
+```
+
+This ensures proper protocol selection and compatibility with WebSocket clients. The `handleProtocols` function receives a Set of protocols requested by the client and should return the selected protocol string.
